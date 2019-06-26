@@ -4,5 +4,5 @@ function driversWithRevenueOver (drivers, revenue) {
 }
 
 function driverNamesWithRevenueOver (drivers, revenue) {
-  return drivers.filter( driversWithRevenueOver(drivers, revenue) )
+  return drivers.filter( driversWithRevenueOver(drivers, revenue).map( function(driver) {return driver.name} ))
 }
